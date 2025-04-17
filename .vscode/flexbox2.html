@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mani">
+        <h1 class="head1">1</h1>
+        <h1 class="head2">2</h1>
+        <h1 class="head3">3</h1>
+        
+        <h1 class="head1">1</h1>
+        <h1 class="head2">2</h1>
+        <h1 class="head3">3</h1>
+        <h1 class="head1">1</h1>
+        <h1 class="head2">2</h1>
+        <h1 class="head3">3</h1>
+    </div>
+    
+</body>
+<style>
+    .mani{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .head1{
+        height: 300px;
+        width: 300px;
+        background-color: aqua;
+
+        margin: 10px;
+        align-self: flex-start;
+        order: 2;
+    }
+    .head2{
+        height: 300px;
+        width: 300px;
+        background-color: orange;
+        margin: 10px;  
+        align-self: flex-end;
+        order: 0;
+       
+    }
+    .head3{
+        height: 300px;
+        width: 300px;
+        background-color: yellow; 
+        margin: 10px; 
+        align-self: flex-end;
+        order: 3;
+    }
+</style>
+</html>
