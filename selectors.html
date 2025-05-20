@@ -3,10 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>selectors</title>
     <style>
         .head1,.head2{
             color: red;
+        }
+        .parent{
+            color: blue;
+        }
+        .akhil::first-letter,.parent::first-letter{
+            color: yellow;
+        }
+        .akhil::before{
+            content: xvdfg;
+            color: aqua;
+        }
+        .retail{
+            display: flex;
+            justify-content: end;
+            margin: 20px solid black;
+            padding: 30px;
+            flex-direction: column;
+            gap: 30px;
+
+        }
+        .headretail{
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+
+        }
+        .h1{
+            color: brown;
+            text-align: center;
+            gap: 30px;
+            font-size: 20px;
+            border: 40px;
+            margin: 30px solid black;
+            border-radius: 40px;
+        }
+        .p{
+            color: aqua;
+        }
+        .main{
+            display: flex;
+            margin: 30px;
+            flex-direction: row-reverse;
         }
     </style>
 </head>
@@ -14,8 +56,41 @@
     <h1 class="head1">these are selectors</h1>
     <h2 class="head2">we can use combination selectors to apply styles for two different selectors</h2>
     <p>paragraph</p>
+    <!--USING SELECT OPERATION-->
+    <input type="text" placeholder="enter the best technology">
+    <select>enter the best technology
+    <option>full stack</option>
+    <option>cyber security</option>
+    <option>machine learning</option>
+    <option>artificial intelligence</option>
+    <option>data science</option>
+    </select>
     <!--descendent selector,child selector,pseudo selectors-->
     <!--position in css-->
-    
+    <h2>pseudo classes</h2>
+    <div class="parent">
+        <p>this is p tag</p>
+        <h4>this is h4 tag</h4>
+        <div class="div2">
+            <div class="div3"></div>
+            <p>hello world</p>
+            <h3>hello this is h3 tag</h3>
+        </div>
+        <div class="div3">this is div tag</div>
+        
+
+    </div>
+    <!--pseudo classes:hover,first line,lastline.. it uses single colon &double colon :: uses first letter,last letter -->
+    <div class="akhil">hello i am akhil</div>
+    <div class="main">
+    <div class="retail">
+    <img src="./retail.jpeg" alt="retail indusrry" height="300px" width="300px">
+    </div>
+    <div class="headretail">
+        <h1>Retail</h1><br>
+        <p>Retail is the process of selling goods and services directly to customers for their personal use. From bustling local bazaars to sophisticated departmental stores, retail brings accessibility and the ease of shopping to customers</p>
+
+    </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="./index.js"></script>
+    <div id="basic">hello everyone</div>
+    <div class="cont"></div>
+    <button id="this">this is button</button>
+</body>
+<script>
+    let simple=document.getElementById("basic")
+    simple.style.color="yellow"
+    simple.style.fontSize="60px"
+    simple.innerText="I am akhil"
+    let basic=document.getElementsByClassName("cont")
+    console.log(simple);
+    console.log(basic);
+    let but=document.getElementById("this")
+    but.addEventListener("click",functionn(){
+       but.innerText=("clicked")
+       but.style.backgroundColor="green"
+        
+    })
+    
+    
+</script>
+</html>
